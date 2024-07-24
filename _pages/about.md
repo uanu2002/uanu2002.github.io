@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me"
+title: "Biography"
 author_profile: true
 redirect_from: 
   - /about/
@@ -30,6 +30,13 @@ Publications
 <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+More
+======
+TBD
+
+<!-- Honors & Awards
+======  -->
 
 <!-- Academic Services
 ====== -->
