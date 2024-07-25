@@ -1,17 +1,3 @@
-{% include base_path %}
-
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
-{% else %}
-  {% assign title = post.title %}
-{% endif %}
-
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <li>
@@ -37,7 +23,12 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
     <!-- {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %} -->
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.excerpt}} <br> {{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p> {% endif %}
+    {% if post.venue %}
+      <p class="archive__item-excerpt" itemprop="description">
+        {{ post.excerpt | replace: "Jianyu Wu", "<strong>Jianyu Wu</strong>" }} <br> 
+        {{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }} 
+      </p>
+    {% endif %}
     </li>
- </article>
+  </article>
 </div>
