@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-[中文简历](../files/cv_zh.pdf) [English CV](../files/cv_en.pdf)
+<!-- [中文简历](../files/cv_zh.pdf) [English CV](../files/cv_en.pdf) -->
 
 Currently I am an undergraduate student of the AI school in Beihang University.
 
@@ -19,9 +19,10 @@ Education
 
 Internships
 ======
-* Baidu Paddle, 2024.7 - 2024.9
+* Baidu Paddle (PLCC), 2024.7 - 2024.9
+* Shanghai AI Lab (Research Intern), 2024.9 - now
 
-Publications
+Publications/Preprints
 ======
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
@@ -30,6 +31,10 @@ Publications
 <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+Academic Services
+======
+* Conference Reviewer: NeurIPS, ICLR
 
 More
 ======
