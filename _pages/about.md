@@ -19,7 +19,8 @@ Education
 
 Internships
 ======
-* Baidu Paddle (PLCC), 2024.7 - 2024.9
+* Institute for AI Industry Research (AIR), Tsinghua University, 2023.10 - 2024.5
+* PaddlePaddle (PLCC), Baidu, 2024.7 - 2024.9
 * Shanghai AI Lab (Research Intern), 2024.9 - now
 
 Publications/Preprints
